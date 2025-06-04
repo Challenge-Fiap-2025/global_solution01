@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #157347;
+    color: white;
+    padding: 1em 2em;
+    text-align: center;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color:#38b000 ;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 2em;
+    max-width: 900px;
+    margin: auto;
+    background-color: white;
+}
+
+article {
+    margin-bottom: 2em;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1em;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+}
+
+.leia-mais {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background-color: #388e3c;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 0.5em;
+}
+
+section#videos, section#fotos {
+    margin-top: 3em;
+}
+
+#fotos img {
+    width: 200px;
+    height: 150px;  
+    object-fit: cover;  
+    margin: 5px;    
+    border-radius: 5px; 
+}
+
+aside {
+    padding: 2em;
+    background-color: #e8f5e9;
+    max-width: 300px;
+    margin: auto;
+    margin-top: 2em;
+    text-align: center;
+}
+
+.redes img {
+    width: 32px;
+    margin: 0 5px;
+}
+
+footer {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+}
+
+form {
+    margin-top: 2em;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+form button {
+    background-color: #157347;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0e5c35;
+}
+
+.blogvoltar{
+    text-decoration: none;
+    color: #e8f5e9;
+}
+
+@media (max-width: 600px) {
+    header {
+        text-align: center;
+        padding: 1em;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0.5em 0;
+    }
+
+    #fotos img {
+        width: 100%;
+        height: auto;
+    }
+
+    main {
+        padding: 1em;
+    }
+}
+
+@media (min-width: 600px) {
+    #fotos img {
+        width: 45%;
+        height: auto;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin: 0.5em;
+    }
+}
+
+@media (min-width: 768px) {
+    #fotos img {
+        width: 30%;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin: 0 1em;
+    }
+}
+
+@media (min-width: 992px) {
+    #fotos img {
+        width: 200px;
+        height: 150px;
+    }
+
+    main {
+        max-width: 900px;
+    }
+}
+
+@media (min-width: 1300px) {
+    main {
+        max-width: 1100px;
+    }
+}
